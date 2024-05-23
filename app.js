@@ -7,7 +7,7 @@ app.set('view engine', 'ejs')
 // app.use(express.urlencoded());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.get('/', (req, res) => {
+app.get('/input', (req, res) => {
    res.render('index')
 })
 app.post('/api', (req, res) => {
@@ -22,7 +22,7 @@ app.post('/api', (req, res) => {
 // }
  });
 
- app.get('/test', (req, res) => {
+ app.get('/', (req, res) => {
     res.send('Hello World')
   })
 
